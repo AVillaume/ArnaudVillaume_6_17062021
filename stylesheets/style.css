@@ -1,0 +1,138 @@
+body a {
+    text-decoration: none;
+}
+
+body {
+    margin: auto;
+    width: 1440px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_align {
+    display: flex;
+    align-items: center;
+}
+
+header a.logo {
+    padding-right: 50px;
+}
+
+.block_title {
+    margin: 0px 50px;
+    
+}
+
+.block_title h1,
+.text_location {
+    color: #901C1C;
+}
+
+.block_title h1, .link_photographer h2 {
+    font-weight: normal;
+    font-size: 2.35em;
+    line-height: 35px;
+}
+
+main {
+    height: auto;
+}
+
+.link_hidden {
+    display: none;
+    width: 180px;
+    height: 30px;
+    position: absolute;
+    right: 46%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #DB8876;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    padding-top: 5px;
+
+    color: #000000;
+}
+.link_style {
+    padding: 2px 8px;
+    border: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 11px;
+    width: 63px;
+    height: 21px;
+    color: #901C1C;
+    font-weight: 550;
+    font-size: 0.8em;
+    line-height: 16px;
+}
+
+
+.image_profil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 35px 20px;
+    margin: auto;
+}
+
+.container__name a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__photographer {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    padding: 20px;
+}
+
+div.text p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.link_photographer h2{
+    color: #D3573C;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.text_location {
+    font-size: 0.9em;
+    line-height: 17px;
+}
+
+.text_description {
+    font-size: 0.7em;
+    color: #000;
+    line-height: 13px;
+}
+
+.text_price {
+    font-size: 0.6em;
+    color: #757575;
+    line-height: 12px;
+}
