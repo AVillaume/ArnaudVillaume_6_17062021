@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Fisheye - Photographe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style_pages.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img class="header__logo" src="../images/logo.png" alt="Fisheye Home page" aria-label="retour page d'accueil"></a>
+    </header>
+    <main id="main">
+
+        <div class="photograph__header" id="photograph__header">
+ 
+        </div>
+        <div class='filter__section'>
+            <div>Trier par</div>
+        <div class="dropdown">
+            <div class="dropdown__btn"><a class="dropbtn dropOne" href="" id="sortByPopularity" aria-label="tri des médias par popularité">Popularité</a><button class="dropbtn triger" aria-haspopup="listbox" aria-expanded="true"><span class="triger__content" aria-label="afficher la liste des tris">></span></button></div>
+            <div id="myDropdown" class="dropdown-content">
+              <a class="dropTwo" aria-label="tri des médias par date" role="listbox" id="sortByDate"><p class="droptext dropTwo" id="date">Date</p></a>
+              <a class="dropThree" aria-label="tri des médias par titre" id="sortByTitle"><p class="droptext dropThree" id="prix">Titre</p></a>
+            </div>
+          </div>
+        </div>
+        <div id="galery" >
+           
+        </div>
+
+        <div id="Lightbox" class="modal">
+          <span class="close__lightbox pointer"></span>
+          <div class="modal-content">
+            <div class="slider-content" id="slider-content"></div>
+            <a class="previous"></a>
+            <a class="next"></a>
+          </div>
+        </div>
+
+        <div class="bottom__page">
+
+      </div>
+
+
+        <div id="bground">
+            <div class="content" id="formular">
+                <div class="modal__title"></div>
+              <span class="close" id="close" onclick="modal.closeModal()"></span>
+              <div class="modal-body">
+                <form
+                  name="contact"
+                  method="POST"
+                  onsubmit="return modal.validate();"
+                >
+                  <div
+                    class="formData">
+                    <label for="first">Prénom</label><br>
+                    <input
+                      class="text-control"
+                      type="text"
+                      id="first"
+                      name="first"
+                      required 
+                      minlength="2"
+                    />
+                    <div id="msgFirst" class="tooltip">Veuillez saisir un prénom valide</div>
+                  </div>
+                  <div class="formData">
+                    <label for="last">Nom</label><br>
+                    <input class="text-control"
+                      type="text"
+                      id="last"
+                      name="last"
+                      required 
+                      minlength="2"
+                    />
+                    <div id="msgLast" class="tooltip">Veuillez saisir un nom valide</div>
+                  </div>
+                  <div class="formData">
+                    <label for="email">E-mail</label><br>
+                    <input
+                      class="text-control"
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                    /><span id="missEmail"></span><br>
+                  </div>
+                  <label for="message">Message</label><br>
+                    <input
+                      class="text-control"
+                      type="text"
+                      id="message"
+                      name="message"
+                      required 
+                      minlength="2"
+                    /><br>
+                    <div id="msgMsg" class="tooltip">Veuillez saisir un message</div>
+                  <input
+                    class="btn-submit button"
+                    type="submit"
+                    value="Envoyer"
+                  />
+                </form>
+              </div>
+            </div>
+              </div>
+    </main>
+</body>
+</html>
