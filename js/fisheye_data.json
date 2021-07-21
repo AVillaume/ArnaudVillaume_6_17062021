@@ -8,8 +8,7 @@
         "tags": ["portrait", "events", "travel", "animals"],
         "tagline": "Voir le beau dans le quotidien",
         "price": 400,
-        "portrait": "MimiKeel.jpg",
-        "chosenPicture": "images/243/Portrait_Nora.jpg"
+        "portrait": "MimiKeel.jpg"
       },
       {
         "name": "Ellie-Rose Wilkens",
@@ -19,8 +18,7 @@
         "tags": ["sports", "architecture"],
         "tagline": "Capturer des compositions complexes",
         "price": 250,
-        "portrait": "EllieRoseWilkens.jpg",
-        "chosenPicture": "images/930/Architecture_Horseshoe.jpg"
+        "portrait": "EllieRoseWilkens.jpg"
       },
       {
         "name": "Tracy Galindo",
@@ -30,8 +28,7 @@
         "tags": ["art", "fashion", "events"],
         "tagline": "Photographe freelance",
         "price": 500,
-        "portrait": "TracyGalindo.jpg",
-        "chosenPicture": "images/82/Fashion_Urban_Jungle.jpg"
+        "portrait": "TracyGalindo.jpg"
       },
       {
         "name": "Nabeel Bradford",
@@ -41,8 +38,7 @@
         "tags": ["travel", "portrait"],
         "tagline": "Toujours aller de l'avant",
         "price": 350,
-        "portrait": "NabeelBradford.jpg",
-        "chosenPicture": "images/527/Travel_Outdoor_Baths.jpg"
+        "portrait": "NabeelBradford.jpg"
       },
       {
         "name": "Rhode Dubois",
@@ -52,8 +48,7 @@
         "tags": ["sport", "fashion", "events", "animals"],
         "tagline": "Je crée des souvenirs",
         "price": 275,
-        "portrait": "RhodeDubois.jpg",
-        "chosenPicture": "images/925/Fashion_Melody_Red_on_Stripes.jpg"
+        "portrait": "RhodeDubois.jpg"
       },
       {
         "name": "Marcel Nikolic",
@@ -63,8 +58,7 @@
         "tags": ["travel", "architecture"],
         "tagline": "Toujours à la recherche de LA photo",
         "price": 300,
-        "portrait": "MarcelNikolic.jpg",
-        "chosenPicture": "images/195/Travel_Tower.jpg"
+        "portrait": "MarcelNikolic.jpg"
       }
     ],
     "media": [
@@ -76,7 +70,8 @@
         "tags": ["fashion"],
         "likes": 62,
         "date": "2011-12-08",
-        "price": 55
+        "price": 55,
+        "alt": "zdlffls"
       },
       {
         "id": 8520927,

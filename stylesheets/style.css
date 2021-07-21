@@ -138,3 +138,12 @@ div.text p {
     color: #757575;
     line-height: 12px;
 }
+
+.showError {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+    border: solid 2px red;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

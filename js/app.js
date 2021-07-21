@@ -18,6 +18,8 @@ fetch(callJson)
   .then(function(res) {
     if (res.ok) {
       return res.json();
+    } else {
+      photographerList.innerHTML +=`<p class="showStatus">${res.status} - ${res.statusText}</p>`;
     }
   })
   .then(function(value) {
@@ -25,19 +27,19 @@ fetch(callJson)
     showInfo(value.photographers)
   })
   .catch(function(err) {
+    photographerList.innerHTML += `<p class="showError">${err} !</p>` 
     // Une erreur est survenue
   });
 
   class Photographers {
     //chosenPicture, city, country, id, name, portrait, price, tagline, tags
     
-    constructor(chosenPicture, city, country, id, name, price, tagline, tags) {
-      this.chosenPicture = chosenPicture;
+    constructor(city, country, id, name, portrait, price, tagline, tags) {
       this.city = city;
       this.country = country;
       this.id = id;
       this.name = name;
-      //this.portrait = portrait;
+      this.portrait = portrait;
       this.price = price;
       this.tagline = tagline;
       this.tags = tags;
@@ -51,7 +53,7 @@ fetch(callJson)
       <section class="container__photographer">
                 <div class="container__name">
                     <a class="link_photographer" href="">
-                        <img class="image_profil" src="${this.chosenPicture}">
+                        <img class="image_profil" src="images/Photographers_ID/${this.portrait}">
                         <h2>${this.name}</h2>
                     </a>
                 </div>    
@@ -61,7 +63,7 @@ fetch(callJson)
                     <p class="text_price">${this.price}€/jour</p>
                 </div>
                 <div class="link_tag">
-                  ${this.tags.map(tag => `<a class="link_style" href="">#${tag}</a>`).join('')}  
+                  ${this.tags.map(tag => `<span><a class="link_style" href="">#${tag}</a></span>`).join('')}  
                 </div>
             </section>
       
@@ -71,7 +73,7 @@ fetch(callJson)
 
 function showInfo (infos) {
   for (let info of infos) {
-    const photographers = new Photographers(info.chosenPicture, info.city, info.country, info.id, info.name, info.price, info.tagline, info.tags);
+    const photographers = new Photographers(info.city, info.country, info.id, info.name, info.portrait, info.price, info.tagline, info.tags);
     photographers.describe();
   }
 }
@@ -86,3 +88,6 @@ httpRequest.onreadystatechange = function () {
 }
 httpRequest.open('GET', "js/fisheye_data.json", true)
 httpRequest.send()*/
+
+myVar = new Array (5).toString();
+console.log(myVar);
