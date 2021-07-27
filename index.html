@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="js/filterlist.class.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/photographers.class.js"></script>
+
     <title>Fisheye</title>
 </head>
 <body>
@@ -16,23 +21,17 @@
                 <img src="images/logo.png" alt="Fisheye Home Page">
             </a>
                 <nav aria-label="photographer categories">
-                    <a class="link_style" href="">#Portrait</a>
-                    <a class="link_style" href="">#Art</a>
-                    <a class="link_style" href="">#Fashion</a>
-                    <a class="link_style" href="">#Architecture</a>
-                    <a class="link_style" href="">#Travel</a>
-                    <a class="link_style" href="">#Sport</a>
-                    <a class="link_style" href="">#Animals</a>
-                    <a class="link_style" href="">#Events</a>
+                    <ul class="headerFilters" id="header__filters">
+                    </ul>
                 </nav>
         </div>
         <div class="block_title">
-            <h1>Nos photographes</h1>
+            <h1 id="main">Nos photographes</h1>
         </div>
     </header>
 
     <main>
-        <a class="link_hidden" href="">Passer au contenu</a>
+        <a class="link_hidden scroll" href="#main">Passer au contenu</a>
         <div class="container">
 
 
