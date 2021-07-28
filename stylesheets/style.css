@@ -18,6 +18,11 @@ header {
     display: flex;
     align-items: center;
 }
+.filtersAlign {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
 
 header a.logo {
     padding-right: 50px;

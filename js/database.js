@@ -11,7 +11,7 @@ fetch(callJson)
   .then(function(value) {
     console.log(value)
     showInfo(value.photographers)
-    showAllTags(value.tagsList)
+    showAllTags()
   })
   .catch(function(err) {
     photographerList.innerHTML += `<p class="showError">${err} !</p>` 
